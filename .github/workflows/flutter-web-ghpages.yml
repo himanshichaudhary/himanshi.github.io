@@ -27,14 +27,20 @@ jobs:
         with:
           channel: stable
 
+      - name: Flutter version
+        run: |
+          flutter --version
+          dart --version
+          flutter doctor -v
+
       - name: Install dependencies
         run: flutter pub get
 
       - name: Enable web
         run: flutter config --enable-web
 
-      - name: Build web
-        run: flutter build web --release
+      - name: Build web (verbose)
+        run: flutter build web --release -v
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
