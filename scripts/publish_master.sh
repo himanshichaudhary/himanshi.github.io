@@ -28,6 +28,11 @@ fi
 if command -v sed >/dev/null 2>&1; then
   TS=$(date +%s)
   sed -i.bak "s/flutter_bootstrap.js/flutter_bootstrap.js?v=$TS/g" index.html || true
+  sed -i.bak "s/main.dart.js/main.dart.js?v=$TS/g" index.html || true
+  sed -i.bak "s/flutter.js/flutter.js?v=$TS/g" index.html || true
+  sed -i.bak "s/manifest.json/manifest.json?v=$TS/g" index.html || true
+  sed -i.bak "s/icons\/Icon-192.png/icons\/Icon-192.png?v=$TS/g" index.html || true
+  sed -i.bak "s/icons\/Icon-512.png/icons\/Icon-512.png?v=$TS/g" index.html || true
   rm -f index.html.bak || true
 fi
 
