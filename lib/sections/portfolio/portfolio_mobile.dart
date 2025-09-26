@@ -9,7 +9,7 @@ import '../../utils/project_utils.dart';
 import '../../utils/utils.dart';
 import '../../widget/custom_text_heading.dart';
 import '../../widget/project_card.dart';
-
+import 'package:devportfoilio/configs/color_manager.dart';
 
 class PortfolioMobileTab extends StatelessWidget {
   const PortfolioMobileTab({Key? key}) : super(key: key);
@@ -23,7 +23,7 @@ class PortfolioMobileTab extends StatelessWidget {
           text: "\nPortfolio",
         ),
         const CustomSectionSubHeading(
-          text: "Here are few samples of my previous work :)\n\n",
+          text: "From Concept to App – My Creations :)\n\n",
         ),
         CarouselSlider.builder(
           itemCount: ProjectUtils.titles.length,
@@ -51,13 +51,16 @@ class PortfolioMobileTab extends StatelessWidget {
           height: AppDimensions.normalize(14),
           width: AppDimensions.normalize(50),
           child: OutlinedButton(
-            onPressed: () => openURL(StaticUtils.gitHub),
-            child: Text(
-              'See More',
-              style: AppText.l1b,
+            style: ButtonStyle(
+              backgroundColor: MaterialStateProperty.all(blueLight),
             ),
+            onPressed: () => openURL(StaticUtils.gitHub),
+            child: Text('See More',
+                style: TextStyle(
+                    fontWeight: FontWeight.bold, color: Colors.white)),
           ),
-        )
+        ),
+        Space.y2!,
       ],
     );
   }

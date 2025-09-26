@@ -1,8 +1,7 @@
+import 'package:devportfoilio/configs/color_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
 import '../configs/app_dimensions.dart';
-import '../configs/app_theme.dart';
 import '../configs/space.dart';
 import '../constants.dart';
 import '../provider/app_provider.dart';
@@ -31,10 +30,10 @@ class SocialLinks extends StatelessWidget {
                 splashRadius: AppDimensions.normalize(10),
                 icon: Image.network(
                   e.value,
-                  color: appProvider.isDark ? Colors.white : Colors.black,
+                  color: appProvider.isDark ? Colors.white : Colors.white,
                   height: Responsive.isMobile(context)
                       ? AppDimensions.normalize(10)
-                      : null,
+                      : AppDimensions.normalize(10),
                 ),
                 iconSize: Responsive.isMobile(context)
                     ? AppDimensions.normalize(8)
@@ -42,7 +41,7 @@ class SocialLinks extends StatelessWidget {
                 onPressed: () => openURL(
                   StaticUtils.socialLinks[e.key],
                 ),
-                hoverColor: AppTheme.c!.primary!,
+                hoverColor: blueLight,
               ),
             ),
           )

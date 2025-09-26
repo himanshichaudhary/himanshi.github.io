@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 import 'package:provider/provider.dart';
 
 import '../configs/app_dimensions.dart';
@@ -50,24 +49,24 @@ class ProjectCardState extends State<ProjectCard> {
           : () => openURL(
                 widget.projectLink!,
               ),
-      onHover: (isHovering) {
-        if (isHovering) {
-          setState(() {
-            isHover = true;
-          });
-        } else {
-          setState(() {
-            isHover = false;
-          });
-        }
-      },
+      // onHover: (isHovering) {
+      //   if (isHovering) {
+      //     setState(() {
+      //       isHover = true;
+      //     });
+      //   } else {
+      //     setState(() {
+      //       isHover = false;
+      //     });
+      //   }
+      // },
       child: Container(
         margin: Space.h,
         padding: Space.all(),
         width: AppDimensions.normalize(150),
         height: AppDimensions.normalize(90),
         decoration: BoxDecoration(
-          color: appProvider.isDark ? Colors.grey[900] : Colors.white,
+          color: appProvider.isDark ? Colors.black : Colors.white,
           borderRadius: BorderRadius.circular(10),
           boxShadow: isHover
               ? [
@@ -79,7 +78,7 @@ class ProjectCardState extends State<ProjectCard> {
                 ]
               : [
                   BoxShadow(
-                    color: Colors.black.withAlpha(100),
+                    color: AppTheme.c!.primary!.withAlpha(100),
                     blurRadius: 12.0,
                     offset: const Offset(0.0, 0.0),
                   )
@@ -146,19 +145,19 @@ class ProjectCardState extends State<ProjectCard> {
                 ),
               ],
             ),
-            AnimatedOpacity(
-              duration: const Duration(milliseconds: 400),
-              opacity: isHover ? 0.0 : 1.0,
-              child: FittedBox(
-                //fit: BoxFit.fill,
-                child: widget.banner != null
-                    ? Image.asset(
-                        widget.banner!,
-                       fit: BoxFit.cover,
-                      )
-                    : Container(),
-              ),
-            ),
+            // AnimatedOpacity(
+            //   duration: const Duration(milliseconds: 400),
+            //   opacity: isHover ? 0.0 : 1.0,
+            //   child: FittedBox(
+            //     fit: BoxFit.fill,
+            //     child: widget.banner != null
+            //         ? Image.asset(
+            //             widget.banner!,
+            //             fit: BoxFit.fill,
+            //           )
+            //         : Container(),
+            //   ),
+            // ),
           ],
         ),
       ),

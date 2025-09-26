@@ -50,7 +50,7 @@ class _ServiceCardState extends State<_ServiceCard> {
           height: AppDimensions.normalize(80),
           padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 12.0),
           decoration: BoxDecoration(
-            color: appProvider.isDark ? Colors.grey[900] : Colors.white,
+            color: appProvider.isDark ? Colors.grey[900] : blueLight,
             borderRadius: BorderRadius.circular(15),
             boxShadow: isHover
                 ? [
@@ -101,8 +101,9 @@ class _ServiceCardState extends State<_ServiceCard> {
             children: [
               Image.asset(
                 widget.serviceIcon,
+                fit: BoxFit.fitWidth,
                 height: AppDimensions.normalize(30),
-                color: widget.serviceIcon.contains(StaticUtils.openSource) &&
+                color: widget.serviceIcon.contains(StaticUtils.openSourceBlack) &&
                         !appProvider.isDark
                     ? Colors.black
                     : null,

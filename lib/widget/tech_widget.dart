@@ -4,7 +4,6 @@ import '../configs/app_dimensions.dart';
 import '../configs/app_theme.dart';
 import '../configs/app_typography.dart';
 
-
 class ToolTechWidget extends StatelessWidget {
   final String techName;
 
@@ -21,6 +20,7 @@ class ToolTechWidget extends StatelessWidget {
         Text(
           " $techName ",
           style: AppText.l1b,
+          overflow: TextOverflow.ellipsis,
         )
       ],
     );

@@ -1,4 +1,5 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:devportfoilio/configs/color_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -11,7 +12,6 @@ import '../../provider/app_provider.dart';
 import '../../utils/utils.dart';
 import '../../widget/social_links.dart';
 
-
 class HomeDesktop extends StatelessWidget {
   const HomeDesktop({Key? key}) : super(key: key);
 
@@ -22,36 +22,41 @@ class HomeDesktop extends StatelessWidget {
 
     return Container(
       height: size.height * 1.025,
-      padding: Space.h,
+      //padding: Space.h,
       child: Stack(
+        alignment: Alignment.bottomCenter,
         children: [
-          Positioned(
-            bottom: 0,
-            right: 0,
-            child: Opacity(
-              opacity: 0.9,
-              child: EntranceFader(
-                offset: const Offset(0, 0),
-                delay: const Duration(seconds: 1),
-                duration: const Duration(milliseconds: 800),
-                child: Image.asset(
-                  StaticUtils.blackWhitePhoto,
-                  height: size.width < 1200
-                      ? size.height * 0.8
-                      : size.height * 0.85,
-                ),
-              ),
-            ),
-          ),
+          // Positioned(
+          //   bottom: 0,
+          //   right: 0,
+          //   child: Opacity(
+          //     opacity: 0.9,
+          //     child: EntranceFader(
+          //       offset: const Offset(0, 0),
+          //       delay: const Duration(seconds: 1),
+          //       duration: const Duration(milliseconds: 800),
+          //       child: Image.asset(
+          //         StaticUtils.blackWhitePhoto,
+          //         width: size.width / 2.5,
+          //         height: size.width < 1200
+          //             ? size.height * 0.8
+          //             : size.height * 0.85,
+          //         fit: BoxFit.cover,
+          //       ),
+          //     ),
+          //   ),
+          // ),
+
           Container(
             margin: EdgeInsets.fromLTRB(
-              AppDimensions.normalize(30),
-              AppDimensions.normalize(80),
+              AppDimensions.normalize(0),
+              AppDimensions.normalize(50),
               0,
               0,
             ),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Row(
                   mainAxisSize: MainAxisSize.min,
@@ -74,31 +79,43 @@ class HomeDesktop extends StatelessWidget {
                   ],
                 ),
                 Space.y1!,
-                Text(
-                  "Himanshi",
-                  style: AppText.h1!.copyWith(
-                    fontFamily: 'Montserrat',
-                    color: appProvider.isDark ? Colors.white : const Color(0xff1aaecf),
-                    fontSize: AppDimensions.normalize(25),
-                    fontWeight: FontWeight.w100,
-                  ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "Himanshi",
+                      style: AppText.h1b!.copyWith(
+                        fontSize: AppDimensions.normalize(25),
+                        height: 1,
+                        color: appProvider.isDark ? Colors.white : Colors.white,
+                      ),
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      "Chaudhary",
+                      style: AppText.h1b!.copyWith(
+                        fontSize: AppDimensions.normalize(25),
+                        height: 1,
+                        color: appProvider.isDark ? Colors.white : Colors.white,
+                      ),
+                    ),
+                  ],
                 ),
-                Text(
-                  "Chaudhary",
-                  style: AppText.h1b!.copyWith(
-                    fontSize: AppDimensions.normalize(25),
-                    height: 1,
-                  ),
+                SizedBox(
+                  height: 20,
                 ),
                 EntranceFader(
                   offset: const Offset(-10, 0),
                   delay: const Duration(seconds: 1),
                   duration: const Duration(milliseconds: 800),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Icon(
                         Icons.play_arrow_rounded,
-                        color: AppTheme.c!.primary!,
+                        color: blueLight,
                       ),
                       AnimatedTextKit(
                         animatedTexts: [
@@ -113,7 +130,17 @@ class HomeDesktop extends StatelessWidget {
                             textStyle: AppText.b1,
                           ),
                           TyperAnimatedText(
-                            '  :)',
+                            ' REST APIs ',
+                            speed: const Duration(milliseconds: 50),
+                            textStyle: AppText.b1,
+                          ),
+                          TyperAnimatedText(
+                            ' Firebase Database ',
+                            speed: const Duration(milliseconds: 50),
+                            textStyle: AppText.b1,
+                          ),
+                          TyperAnimatedText(
+                            ' :) ',
                             speed: const Duration(milliseconds: 50),
                             textStyle: AppText.b1,
                           ),
@@ -123,11 +150,18 @@ class HomeDesktop extends StatelessWidget {
                     ],
                   ),
                 ),
-                Space.y2!,
+                SizedBox(
+                  height: 20,
+                ),
                 const SocialLinks(),
               ],
             ),
           ),
+          Container(
+            height: 10,
+            width: size.width,
+            color: Colors.white,
+          )
         ],
       ),
     );

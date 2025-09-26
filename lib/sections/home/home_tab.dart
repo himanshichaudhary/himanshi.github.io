@@ -11,7 +11,6 @@ import '../../provider/app_provider.dart';
 import '../../utils/utils.dart';
 import '../../widget/social_links.dart';
 
-
 class HomeTab extends StatelessWidget {
   const HomeTab({Key? key}) : super(key: key);
 
@@ -23,25 +22,26 @@ class HomeTab extends StatelessWidget {
     return SizedBox(
       height: size.height * 1.02,
       child: Stack(
+        alignment: Alignment.bottomCenter,
         children: [
-          Positioned(
-            bottom: 0,
-            right: 0,
-            child: Opacity(
-              opacity: 0.9,
-              child: EntranceFader(
-                offset: const Offset(0, 0),
-                delay: const Duration(seconds: 1),
-                duration: const Duration(milliseconds: 800),
-                child: Image.asset(
-                  StaticUtils.blackWhitePhoto,
-                  height: size.width < 1200
-                      ? size.height * 0.75
-                      : size.height * 0.85,
-                ),
-              ),
-            ),
-          ),
+          // Positioned(
+          //   bottom: 0,
+          //   right: 0,
+          //   child: Opacity(
+          //     opacity: 0.9,
+          //     child: EntranceFader(
+          //       offset: const Offset(0, 0),
+          //       delay: const Duration(seconds: 1),
+          //       duration: const Duration(milliseconds: 800),
+          //       child: Image.asset(
+          //         StaticUtils.blackWhitePhoto,
+          //         height: size.width < 1200
+          //             ? size.height * 0.75
+          //             : size.height * 0.85,
+          //       ),
+          //     ),
+          //   ),
+          // ),
           Container(
             margin: EdgeInsets.fromLTRB(
               AppDimensions.normalize(30),
@@ -50,14 +50,15 @@ class HomeTab extends StatelessWidget {
               0,
             ),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
                       'WELCOME TO MY PORTFOLIO! ',
-                      style: AppText.b2!.copyWith(
+                      style: AppText.b1!.copyWith(
                         fontFamily: 'Montserrat',
                       ),
                     ),
@@ -75,16 +76,16 @@ class HomeTab extends StatelessWidget {
                 Space.y1!,
                 Text(
                   "Himanshi",
-                  style: AppText.h1!.copyWith(
+                  style: AppText.h1b!.copyWith(
                     fontFamily: 'Montserrat',
-                    color: appProvider.isDark ? Colors.white : const Color(0xff1aaecf),
-                    fontWeight: FontWeight.w100,
+                    color: appProvider.isDark ? Colors.white : Colors.white,
                   ),
                 ),
                 Text(
                   "Chaudhary",
                   style: AppText.h1b!.copyWith(
                     height: 1,
+                    color: appProvider.isDark ? Colors.white : Colors.white,
                   ),
                 ),
                 EntranceFader(
@@ -92,6 +93,7 @@ class HomeTab extends StatelessWidget {
                   delay: const Duration(seconds: 1),
                   duration: const Duration(milliseconds: 800),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Icon(
                         Icons.play_arrow_rounded,
@@ -125,6 +127,11 @@ class HomeTab extends StatelessWidget {
               ],
             ),
           ),
+          Container(
+            height: 5,
+            width: size.width,
+            color: Colors.white,
+          )
         ],
       ),
     );

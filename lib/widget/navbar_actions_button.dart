@@ -1,3 +1,4 @@
+import 'package:devportfoilio/configs/color_manager.dart';
 import 'package:flutter/material.dart';
 
 import 'package:provider/provider.dart';
@@ -35,7 +36,7 @@ class NavBarActionButton extends StatelessWidget {
         child: MaterialButton(
           splashColor: Colors.white54,
           highlightColor: Colors.white54,
-          hoverColor: AppTheme.c!.primary,
+          hoverColor: blueLight,
           onPressed: () {
             scrollProvider.scroll(index);
           },

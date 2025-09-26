@@ -1,3 +1,4 @@
+import 'package:devportfoilio/configs/color_manager.dart';
 import 'package:flutter/material.dart';
 
 import '../../configs/app_dimensions.dart';
@@ -8,7 +9,6 @@ import '../../utils/project_utils.dart';
 import '../../utils/utils.dart';
 import '../../widget/custom_text_heading.dart';
 import '../../widget/project_card.dart';
-
 
 class PortfolioDesktop extends StatefulWidget {
   const PortfolioDesktop({Key? key}) : super(key: key);
@@ -28,7 +28,7 @@ class _PortfolioDesktopState extends State<PortfolioDesktop> {
             text: "\nPortfolio",
           ),
           const CustomSectionSubHeading(
-            text: "Here are few samples of my previous work :)\n\n",
+            text: "From Concept to App – My Creations :)\n\n",
           ),
           Wrap(
             alignment: WrapAlignment.center,
@@ -53,13 +53,16 @@ class _PortfolioDesktopState extends State<PortfolioDesktop> {
             height: AppDimensions.normalize(14),
             width: AppDimensions.normalize(50),
             child: OutlinedButton(
-              onPressed: () => openURL(StaticUtils.gitHub),
-              child: Text(
-                'See More',
-                style: AppText.l1b,
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(blueLight),
               ),
+              onPressed: () => openURL(StaticUtils.gitHub),
+              child: Text('See More',
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold, color: Colors.white)),
             ),
-          )
+          ),
+          Space.y2!,
         ],
       ),
     );

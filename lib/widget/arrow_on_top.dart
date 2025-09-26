@@ -1,4 +1,5 @@
 
+import 'package:devportfoilio/configs/color_manager.dart';
 import 'package:flutter/material.dart';
 
 import 'package:provider/provider.dart';
@@ -50,7 +51,7 @@ class ArrowOnTopState extends State<ArrowOnTop> {
                 },
                 child: Container(
                   decoration: BoxDecoration(
-                    color: appProvider.isDark ? Colors.white : Colors.black,
+                    color: appProvider.isDark ? Colors.white : Colors.white,
                     borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(8.0),
                       bottomLeft: Radius.circular(8.0),
@@ -66,7 +67,7 @@ class ArrowOnTopState extends State<ArrowOnTop> {
                   ),
                   child: Icon(
                     Icons.arrow_drop_up_outlined,
-                    color: AppTheme.c!.primary!,
+                    color: blueLight,
                     size: MediaQuery.of(context).size.height * 0.05,
                   ),
                 ),

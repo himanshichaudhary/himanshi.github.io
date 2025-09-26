@@ -9,8 +9,9 @@ class _MobileDrawer extends StatelessWidget {
     final scrollProvider = Provider.of<ScrollProvider>(context);
 
     return Drawer(
+      backgroundColor: blueDark,
       child: Material(
-        color: appProvider.isDark ? Colors.grey[900] : Colors.white,
+        color: appProvider.isDark ? Colors.white : blueDark,
         child: Padding(
           padding: const EdgeInsets.fromLTRB(0, 25.0, 0, 0),
           child: Column(
@@ -20,25 +21,25 @@ class _MobileDrawer extends StatelessWidget {
                 child: NavBarLogo(),
               ),
               const Divider(),
-              ListTile(
-                leading: Icon(
-                  Icons.light_mode,
-                  color: AppTheme.c!.primary!,
-                ),
-                title: const Text(
-                  "Dark Mode",
-                ),
-                trailing: Switch(
-                  inactiveTrackColor: Colors.grey,
-                  value: appProvider.isDark,
-                  onChanged: (value) {
-                    appProvider
-                        .setTheme(value ? ThemeMode.dark : ThemeMode.light);
-                  },
-                  activeColor: AppTheme.c!.primary,
-                ),
-              ),
-              const Divider(),
+              // ListTile(
+              //   leading: Icon(
+              //     Icons.light_mode,
+              //     color: AppTheme.c!.primary!,
+              //   ),
+              //   title: const Text(
+              //     "Dark Mode",
+              //   ),
+              //   trailing: Switch(
+              //     inactiveTrackColor: Colors.grey,
+              //     value: appProvider.isDark,
+              //     onChanged: (value) {
+              //       appProvider
+              //           .setTheme(value ? ThemeMode.dark : ThemeMode.light);
+              //     },
+              //     activeColor: AppTheme.c!.primary,
+              //   ),
+              // ),
+              // const Divider(),
               ...NavBarUtils.names.asMap().entries.map(
                     (e) => Padding(
                       padding: const EdgeInsets.all(8.0),
@@ -51,7 +52,9 @@ class _MobileDrawer extends StatelessWidget {
                         child: ListTile(
                           leading: Icon(
                             NavBarUtils.icons[e.key],
-                            color: AppTheme.c!.primary,
+                            color: appProvider.isDark
+                                ? Colors.white
+                                : Colors.white,
                           ),
                           title: Text(
                             e.value,
@@ -61,25 +64,25 @@ class _MobileDrawer extends StatelessWidget {
                       ),
                     ),
                   ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: MaterialButton(
-                  hoverColor: AppTheme.c!.primary!.withAlpha(150),
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(5.0),
-                      side: BorderSide(color: AppTheme.c!.primary!)),
-                  onPressed: () => openURL(StaticUtils.resume),
-                  child: const ListTile(
-                    leading: Icon(
-                      Icons.book,
-                      color: Colors.red,
-                    ),
-                    title: Text(
-                      'RESUME',
-                    ),
-                  ),
-                ),
-              ),
+              // Padding(
+              //   padding: const EdgeInsets.all(8.0),
+              //   child: MaterialButton(
+              //     hoverColor: AppTheme.c!.primary!.withAlpha(150),
+              //     shape: RoundedRectangleBorder(
+              //         borderRadius: BorderRadius.circular(5.0),
+              //         side: BorderSide(color: AppTheme.c!.primary!)),
+              //     onPressed: () => openURL(StaticUtils.resume),
+              //     child: const ListTile(
+              //       leading: Icon(
+              //         Icons.book,
+              //         color: Colors.red,
+              //       ),
+              //       title: Text(
+              //         'RESUME',
+              //       ),
+              //     ),
+              //   ),
+              // ),
             ],
           ),
         ),

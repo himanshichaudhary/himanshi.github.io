@@ -19,19 +19,21 @@ class _ServiceCardBackWidget extends StatelessWidget {
           style: AppText.l1,
         ),
         Divider(
-          color: appProvider.isDark ? Colors.white : Colors.black38,
+          color: appProvider.isDark ? Colors.white : Colors.white,
         ),
+        SizedBox(height: 10,),
         SizedBox(
           height: AppDimensions.normalize(14),
           width: AppDimensions.normalize(60),
           child: MaterialButton(
-            color: AppTheme.c!.primary,
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(10.0))),
+            color: whiteTextColor,
             onPressed: () => showDialog(
                 context: context,
                 builder: (contecxt) => AlertDialog(
                       title: Text(
                         "Hire Me!",
-                        style: AppText.b2b,
+                        style: TextStyle(color: appProvider.isDark ? Colors.white : Colors.black),
                       ),
                       actions: [
                         TextButton(
@@ -44,9 +46,10 @@ class _ServiceCardBackWidget extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           MaterialButton(
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(10.0))),
                             height: 40.0,
                             onPressed: () => openURL(
-                              'https://api.whatsapp.com/send?phone=923460159889',
+                              'https://api.whatsapp.com/send?phone=918922903712',
                             ),
                             color: const Color(0xff34CB62),
                             child: Row(
@@ -68,9 +71,10 @@ class _ServiceCardBackWidget extends StatelessWidget {
                           ),
                           Space.y1!,
                           MaterialButton(
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(10.0))),
                             height: 40.0,
                             onPressed: () => openURL(
-                              'https://www.upwork.com/freelancers/~0197b0f6aaeba9675f',
+                              'https://www.upwork.com/freelancers/~013e20377d6b663744?viewMode=1',
                             ),
                             color: const Color(0xff13A800),
                             child: Row(
@@ -78,12 +82,12 @@ class _ServiceCardBackWidget extends StatelessWidget {
                               children: [
                                 Image.network(
                                   'https://img.icons8.com/ios-filled/50/000000/upwork.png',
-                                  height: 35.0,
+                                  height: 20.0,
                                   color: Colors.white,
                                 ),
                                 Space.x!,
                                 Text(
-                                  'Upwork',
+                                  ' Upwork   ',
                                   style: AppText.l1!.copyWith(
                                     color: Colors.white,
                                   ),
@@ -97,7 +101,7 @@ class _ServiceCardBackWidget extends StatelessWidget {
             child: Text(
               'HIRE ME!',
               style: AppText.b2!.copyWith(
-                color: Colors.white,
+                color: Colors.black,
               ),
             ),
           ),

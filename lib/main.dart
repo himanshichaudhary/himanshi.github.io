@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:url_strategy/url_strategy.dart';
-import 'configs/core_theme.dart' as theme ;
+import 'configs/core_theme.dart' as theme;
 import 'provider/app_provider.dart';
 import 'provider/drawer_provider.dart';
 import 'provider/scroll_provider.dart';
@@ -18,11 +18,9 @@ class MyApp extends StatefulWidget {
 
   @override
   MyAppState createState() => MyAppState();
-
 }
 
 class MyAppState extends State<MyApp> {
-
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
@@ -38,7 +36,6 @@ class MyAppState extends State<MyApp> {
       ),
     );
   }
-
 }
 
 class MaterialChild extends StatefulWidget {
@@ -50,20 +47,16 @@ class MaterialChild extends StatefulWidget {
 }
 
 class _MaterialChildState extends State<MaterialChild> {
-
-
   void initAppTheme() {
     final appProviders = AppProvider.state(context);
     appProviders.init();
   }
-
 
   @override
   void initState() {
     initAppTheme();
     super.initState();
   }
-
 
   @override
   Widget build(BuildContext context) {

@@ -14,7 +14,6 @@ class NavBarUtils {
     Icons.person,
     Icons.work,
     Icons.build,
-    Icons.settings,
     Icons.contact_page,
   ];
 }

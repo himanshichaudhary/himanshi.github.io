@@ -39,13 +39,13 @@ class AppText {
     h3 = baseStyle.copyWith(fontSize: AppDimensions.font(15));
     h3b = h3!.copyWith(fontWeight: b);
 
-    b1 = baseStyle.copyWith(fontSize: AppDimensions.font(10));
+    b1 = baseStyle.copyWith(fontSize: AppDimensions.font(10) , color: Colors.white);
     b1b = b1!.copyWith(fontWeight: b);
 
     b2 = baseStyle.copyWith(fontSize: AppDimensions.font(8));
     b2b = b2!.copyWith(fontWeight: b);
 
-    l1 = baseStyle.copyWith(fontSize: AppDimensions.font(6));
+    l1 = baseStyle.copyWith(fontSize: AppDimensions.font(6) , color: Colors.white);
     l1b = l1!.copyWith(fontWeight: b);
 
     l2 = baseStyle.copyWith(fontSize: AppDimensions.font(4));
