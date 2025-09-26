@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c6353f49-3b28-4406-8fd0-ba727f8f2632" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/photos/dp.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/photos/round_dp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/projects/beanee.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/projects/beanee_logo.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/projects/cc_logo.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/projects/club.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/projects/mobile_dev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/projects/pneuma.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/projects/show_off.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/projects/showoff_logo.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/projects/trade_banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/projects/tradefree_logo.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/services/blog_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/services/digital_market.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/services/mobile_dev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/services/mobile_icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/services/ux_ui_design.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/services/website_dev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/services/website_dev1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/services/website_dev2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/configs/color_manager.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/configs/app_theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/configs/app_theme.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/configs/app_typography.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/configs/app_typography.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/configs/core_theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/configs/core_theme.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/constants.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/constants.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sections/about/about_desktop.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sections/about/about_desktop.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sections/contact/contact_desktop.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sections/contact/contact_desktop.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sections/home/home_desktop.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sections/home/home_desktop.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sections/main/main_section.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sections/main/main_section.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sections/main/widgets/_mobile_drawer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sections/main/widgets/_mobile_drawer.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sections/main/widgets/_navbar_desktop.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sections/main/widgets/_navbar_desktop.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sections/portfolio/portfolio_desktop.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sections/portfolio/portfolio_desktop.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sections/services/services.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sections/services/services.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sections/services/services_desktop.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sections/services/services_desktop.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sections/services/widgets/_services_card.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sections/services/widgets/_services_card.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sections/services/widgets/_services_card_back.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sections/services/widgets/_services_card_back.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/about_utils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/about_utils.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/project_utils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/project_utils.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/services_utils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/services_utils.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/utils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/utils.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widget/arrow_on_top.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widget/arrow_on_top.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widget/custom_text_heading.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widget/custom_text_heading.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widget/footer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widget/footer.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widget/navbar_actions_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widget/navbar_actions_button.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widget/project_card.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widget/project_card.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widget/social_links.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widget/social_links.dart" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/lib/sections/home/home.dart" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/sections/home/home_desktop.dart" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/sections/main/main_section.dart" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/sections/main/widgets/_body.dart" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/sections/main/widgets/_mobile_drawer.dart" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/sections/main/widgets/_navbar_desktop.dart" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/sections/services/services_desktop.dart" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/utils/services_utils.dart" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/utils/utils.dart" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/widget/social_links.dart" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2DkM9EIqj484KpyBJYR1L8OFnrV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/himanshi/AndroidStudioProjects/himanshi/devportfoilio/assets/projects&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/projects" />
+      <recent name="$PROJECT_DIR$/assets/services" />
+      <recent name="$PROJECT_DIR$/assets/photos" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/sections/demo_folder" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6353f49-3b28-4406-8fd0-ba727f8f2632" name="Default Changelist" comment="" />
+      <created>1661238485050</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661238485050</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
