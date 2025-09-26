@@ -24,6 +24,13 @@ if command -v sed >/dev/null 2>&1; then
   rm -f index.html.bak || true
 fi
 
+# Strong cache-busting: append a unique query to flutter_bootstrap.js reference
+if command -v sed >/dev/null 2>&1; then
+  TS=$(date +%s)
+  sed -i.bak "s/flutter_bootstrap.js/flutter_bootstrap.js?v=$TS/g" index.html || true
+  rm -f index.html.bak || true
+fi
+
 git add -A
 commit_msg="chore(pages): publish Flutter web build to root (user site)"
 if git diff --cached --quiet; then
